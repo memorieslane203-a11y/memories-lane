@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GEN-Z RAKHIS - Modern</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#1b0a3b}
+.page{width:100vw;height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;font-family:Poppins,sans-serif;color:#fff;background:
+ radial-gradient(70% 60% at 12% 8%, rgba(255,77,157,.85) 0%, transparent 60%),
+ radial-gradient(70% 60% at 88% 10%, rgba(139,92,246,.9) 0%, transparent 60%),
+ radial-gradient(70% 65% at 85% 95%, rgba(59,130,246,.85) 0%, transparent 60%),
+ radial-gradient(70% 65% at 10% 95%, rgba(255,138,0,.8) 0%, transparent 60%),
+ linear-gradient(160deg,#2a0f63 0%, #43108f 45%, #2a0f63 100%)}
+.blob{position:absolute;border-radius:50%;pointer-events:none;filter:blur(.2vmin)}
+.b1{width:34vmin;height:34vmin;background:rgba(255,77,157,.35);top:-12vmin;left:-10vmin}
+.b2{width:26vmin;height:26vmin;background:rgba(255,209,102,.28);bottom:-8vmin;right:-6vmin}
+.b3{width:20vmin;height:20vmin;background:rgba(139,92,246,.4);top:38%;right:-8vmin}
+.b4{width:16vmin;height:16vmin;background:rgba(59,130,246,.4);top:12%;left:30%}
+.slant{position:absolute;pointer-events:none;opacity:.14}
+.s1{top:-14%;left:-8%;width:70vmin;height:26vmin;background:#fff;transform:rotate(-14deg)}
+.s2{bottom:-6%;right:-10%;width:80vmin;height:22vmin;background:#ffd166;transform:rotate(-8deg)}
+
+/* header */
+.header{display:flex;align-items:center;justify-content:space-between;padding:3.2vmin 5vmin 0;position:relative;z-index:5}
+.brand{font-weight:900;font-size:4vmin;letter-spacing:.12em;text-transform:uppercase}
+.brand .g{color:#ffd166}
+.brand .z{color:#7ff3ff}
+.sticker{display:inline-block;background:#ffd166;color:#2a0f63;font-weight:800;font-size:1.7vmin;letter-spacing:.14em;padding:1vmin 2vmin;border-radius:100px;transform:rotate(4deg);text-transform:uppercase;box-shadow:0 .8vmin 2vmin rgba(0,0,0,.25)}
+.sticker.alt{background:#fff;color:#e73c8f;transform:rotate(-5deg)}
+.sticker.purple{background:#8b5cf6;color:#fff}
+
+/* hero */
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:4;min-height:0;text-align:center}
+.rainbow{position:absolute;top:8%;left:50%;transform:translateX(-50%);width:58vmin;height:58vmin;border-radius:50%;border:3vmin solid transparent;border-top-color:#ff4d9d;border-right-color:#8b5cf6;border-bottom-color:#3b82f6;border-left-color:#ff8a00;opacity:.75;pointer-events:none}
+.stage{position:relative;width:42vmin;height:42vmin;display:flex;align-items:center;justify-content:center}
+.stage img.main{width:36vmin;filter:drop-shadow(0 2vmin 2.6vmin rgba(20,4,50,.5))}
+.stage img.alt{position:absolute;width:13vmin;left:-3vmin;top:2vmin;transform:rotate(-16deg);filter:drop-shadow(0 1.4vmin 2vmin rgba(20,4,50,.45))}
+.stage img.alt2{position:absolute;width:11vmin;right:-2vmin;bottom:0;transform:rotate(14deg);filter:drop-shadow(0 1.4vmin 2vmin rgba(20,4,50,.45))}
+.badge{position:absolute;background:#ff4d9d;color:#fff;font-weight:800;font-size:2vmin;padding:1.2vmin 2.6vmin;border-radius:100px;transform:rotate(-8deg);box-shadow:0 1vmin 2.4vmin rgba(255,77,157,.5);z-index:6;text-transform:uppercase;letter-spacing:.12em}
+.badge.tl{top:-2vmin;left:-6vmin}
+.badge.br{bottom:-2vmin;right:-5vmin;background:#3b82f6;transform:rotate(7deg);box-shadow:0 1vmin 2.4vmin rgba(59,130,246,.5)}
+h1{font-weight:900;font-size:6.8vmin;line-height:1.02;margin-top:2.4vmin;text-transform:uppercase}
+h1 .w{color:#ffd166}
+h1 .b{color:#7ff3ff}
+.tag{font-weight:600;font-size:2.6vmin;margin-top:1.4vmin}
+.tag .h{color:#ff8aa8}
+.tag .s{color:#c4b5fd}
+.sub{font-weight:600;font-size:1.9vmin;letter-spacing:.34em;text-transform:uppercase;color:#ffe9f3;margin-top:1.2vmin}
+
+/* features */
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:1.3vmin 1.6vmin;margin-top:2.6vmin;max-width:88vmin}
+.chip{display:flex;align-items:center;gap:.8vmin;background:#fff;color:#2a0f63;font-weight:700;font-size:1.65vmin;padding:1vmin 2vmin;border-radius:100px;box-shadow:0 .8vmin 1.8vmin rgba(20,4,50,.28);letter-spacing:.06em}
+.chip b{color:#e73c8f}
+.chip:nth-child(3n+1) b{color:#3b82f6}
+.chip:nth-child(3n+2) b{color:#ff8a00}
+
+/* cta */
+.cta-row{display:flex;justify-content:center;gap:2.4vmin;margin-top:2.8vmin}
+.cta{font-weight:900;font-size:2.6vmin;letter-spacing:.14em;color:#fff;padding:1.9vmin 5vmin;border-radius:100px;background:linear-gradient(90deg,#ff4d9d,#e73c8f);box-shadow:0 1.4vmin 3vmin rgba(255,77,157,.5);text-transform:uppercase;position:relative}
+.cta::after{content:'\2192';margin-left:1.6vmin;font-size:1.2em}
+.cta.ghost{background:rgba(255,255,255,.14);border:2px solid #fff;box-shadow:none;backdrop-filter:blur(4px)}
+.cta.small{font-size:2vmin;padding:1.5vmin 3.6vmin}
+
+/* footer */
+.footer{position:relative;z-index:5;padding:2.8vmin 5vmin 3.2vmin;background:rgba(16,4,38,.85);border-top:3px solid #ffd166}
+.foot-inner{display:flex;align-items:center;justify-content:center;gap:4vmin;max-width:112vmin;margin:0 auto}
+.fcol{flex:1;display:flex;flex-direction:column;align-items:center;gap:.7vmin;text-align:center}
+.fcol .lab{font-size:1.5vmin;letter-spacing:.34em;text-transform:uppercase;color:#ffd166;font-weight:600}
+.fcol .big{font-weight:800;font-size:2.9vmin;color:#fff;letter-spacing:.04em}
+.fcol .big b{color:#7ff3ff}
+.fcol .addr{font-size:1.7vmin;color:#e6d9ff;line-height:1.5;font-weight:500}
+.vline{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,#ffd166 50%,transparent)}
+
+/* wide mode */
+@media (min-aspect-ratio:4/3){
+ .page{flex-direction:row}
+ .side-col{flex:1.25;display:flex;flex-direction:column;justify-content:center;padding:4vmin 4vmin 3vmin 6vmin;min-width:0}
+ .hero{flex:none;flex:1.05;align-items:center}
+ .stage{width:48vmin;height:48vmin}
+ .stage img.main{width:41vmin}
+ .chips{max-width:none;margin-top:2.2vmin}
+ .cta-row{margin-top:2.4vmin}
+ h1{margin-top:2vmin;font-size:6vmin}
+ .header{flex-direction:column;gap:1.6vmin}
+}
+/* tall mode */
+@media (max-aspect-ratio:5/8){
+ .header{padding:4.4vmin 5vmin 0}
+ .brand{font-size:4.6vmin}
+ .stage{width:50vmin;height:50vmin}
+ .stage img.main{width:43vmin}
+ h1{font-size:7.6vmin;margin-top:3.2vmin}
+ .tag{font-size:3vmin}
+ .chips{margin-top:3.2vmin;max-width:94vmin}
+ .cta-row{margin-top:3.4vmin}
+ .footer{padding:3.6vmin 5vmin 4vmin}
+ .fcol .big{font-size:3.3vmin}
+ .fcol .addr{font-size:2vmin}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+  <div class="slant s1"></div><div class="slant s2"></div>
+
+  <div class="side-col">
+    <div class="header">
+      <div class="brand"><span class="g">GEN</span>-<span class="z">Z</span> RAKHIS</div>
+      <div class="sticker">New Drop ✨ 2026</div>
+    </div>
+
+    <div class="hero">
+      <div class="rainbow"></div>
+      <div class="stage">
+        <span class="badge tl">Trending</span>
+        <span class="badge br">Sibling Love</span>
+        <img class="alt" src="../assets/rakhi-kids.svg" alt="Kids rakhi">
+        <img class="main" src="../assets/rakhi-designer.svg" alt="Designer rakhi">
+        <img class="alt2" src="../assets/rakhi-sister.svg" alt="Sister rakhi">
+      </div>
+      <h1>Happy Raksha<br>Bandhan <span class="w">&#10084;</span></h1>
+      <div class="tag"><span class="h">Celebrate the Bond.</span> <span class="s">Wear the Vibe.</span></div>
+      <div class="sub">Trendy Rakhis for the New Generation</div>
+      <div class="chips">
+        <div class="chip">✨ <b>Trendy</b> Designs</div>
+        <div class="chip">🎁 <b>Beautiful</b> Gift Packaging</div>
+        <div class="chip">💎 <b>Premium</b> Quality</div>
+        <div class="chip">❤️ <b>Made</b> with Love</div>
+        <div class="chip">💰 <b>Affordable</b> Prices</div>
+        <div class="chip">🚚 <b>Fast</b> Delivery</div>
+        <div class="chip">🧿 <b>Personalized</b> Designs Available</div>
+      </div>
+      <div class="cta-row">
+        <div class="cta">Order Now</div>
+        <div class="cta ghost">Shop Now</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="foot-inner">
+      <div class="fcol">
+        <div class="lab">📞 Contact Us</div>
+        <div class="big"><b>9553050079</b> &nbsp;•&nbsp; <b>7981889976</b></div>
+      </div>
+      <div class="vline"></div>
+      <div class="fcol">
+        <div class="lab">📍 Address</div>
+        <div class="addr">1-6-213/A/4, Parsigutta, Sunnambatti,<br>Secunderabad, Hyderabad</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

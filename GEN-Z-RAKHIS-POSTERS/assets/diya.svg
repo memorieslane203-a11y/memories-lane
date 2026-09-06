@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300">
+  <defs>
+    <linearGradient id="yBronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8a84e"/>
+      <stop offset=".5" stop-color="#b0782c"/>
+      <stop offset="1" stop-color="#6e4410"/>
+    </linearGradient>
+    <linearGradient id="yFlame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff7a1a"/>
+      <stop offset=".55" stop-color="#ffc23c"/>
+      <stop offset="1" stop-color="#fff6b8"/>
+    </linearGradient>
+    <radialGradient id="yGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffd76a" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffd76a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="130" cy="258" rx="88" ry="12" fill="#000" opacity=".3"/>
+  <circle cx="130" cy="118" r="82" fill="url(#yGlow)"/>
+
+  <path d="M130 58 C 112 58, 92 74, 92 96 C 92 122, 118 148, 130 160 C 142 148, 168 122, 168 96 C 168 74, 148 58, 130 58 Z" fill="url(#yFlame)"/>
+  <path d="M130 70 C 122 70, 110 80, 110 92 C 110 108, 126 124, 130 132 C 134 124, 150 108, 150 92 C 150 80, 138 70, 130 70 Z" fill="#fff3c2" opacity=".85"/>
+
+  <path d="M36 240 C 36 200, 84 196, 130 196 C 176 196, 224 200, 224 240 C 224 266, 176 272, 130 272 C 84 272, 36 266, 36 240 Z" fill="url(#yBronze)"/>
+  <path d="M130 196 C 130 196, 130 240, 130 272" stroke="#4e2d08" stroke-width="3" opacity=".5"/>
+  <path d="M36 240 C 70 246, 190 246, 224 240" fill="none" stroke="#4e2d08" stroke-width="3" opacity=".45"/>
+  <path d="M130 196 L 96 240 M130 196 L 164 240" stroke="#4e2d08" stroke-width="2.5" opacity=".4"/>
+  <rect x="120" y="196" width="20" height="76" rx="10" fill="#5c3610"/>
+  <rect x="120" y="196" width="20" height="76" rx="10" fill="#fff" opacity=".12"/>
+</svg>

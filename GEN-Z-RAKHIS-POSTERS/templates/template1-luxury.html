@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GEN-Z RAKHIS - Premium Luxury</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500;1,700&family=Poppins:wght@300;400;500;600;700;800;900&family=Great+Vibes&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0b0204}
+.page{width:100vw;height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;font-family:Poppins,sans-serif;color:#f3e7c9;background:
+ radial-gradient(120% 90% at 50% -10%, #3d0516 0%, #170209 45%, #0b0204 75%),
+ radial-gradient(80% 60% at 85% 110%, #4a0a12 0%, transparent 60%),
+ #0b0204}
+.goldtext{background:linear-gradient(180deg,#fdf0b8 0%,#e9c25e 48%,#a87c22 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.corner{position:absolute;width:9vmin;height:9vmin;opacity:.9;pointer-events:none}
+.corner svg{width:100%;height:100%}
+.c-tl{top:2.2vmin;left:2.2vmin}.c-tr{top:2.2vmin;right:2.2vmin;transform:scaleX(-1)}
+.c-bl{bottom:2.2vmin;left:2.2vmin;transform:scaleY(-1)}.c-br{bottom:2.2vmin;right:2.2vmin;transform:scale(-1,-1)}
+.vline{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,#e9c25e 50%,transparent);opacity:.6}
+
+/* header */
+.header{display:flex;align-items:center;justify-content:center;gap:2.6vmin;padding:3.6vmin 6vmin 1.2vmin;position:relative;z-index:5}
+.brand{font-family:'Playfair Display',serif;font-weight:900;font-size:4.6vmin;letter-spacing:.55em;text-indent:.55em}
+.brand small{display:block;font-family:Poppins,sans-serif;font-weight:500;font-size:1.35vmin;letter-spacing:.9em;text-indent:.9em;color:#e9c25e;margin-top:.8vmin;text-transform:uppercase}
+
+/* hero */
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:4;min-height:0}
+.glow{position:absolute;width:46vmin;height:46vmin;border-radius:50%;background:radial-gradient(circle,rgba(233,194,94,.32) 0%,rgba(233,194,94,.08) 45%,transparent 70%);filter:blur(2vmin);pointer-events:none}
+.stage{position:relative;width:44vmin;height:44vmin;display:flex;align-items:center;justify-content:center}
+.stage img.gift{width:38vmin;filter:drop-shadow(0 2vmin 3vmin rgba(0,0,0,.65))}
+.stage img.side{position:absolute;width:15vmin;right:-6vmin;top:0;transform:rotate(18deg);filter:drop-shadow(0 1.4vmin 2vmin rgba(0,0,0,.6))}
+.stage img.side2{position:absolute;width:11vmin;left:-5vmin;bottom:1vmin;transform:rotate(-24deg);filter:drop-shadow(0 1.2vmin 1.8vmin rgba(0,0,0,.55));opacity:.92}
+h1{font-family:'Playfair Display',serif;font-weight:900;font-size:6.6vmin;line-height:1.06;text-align:center;margin-top:2.6vmin;text-transform:uppercase}
+h1 .em{display:block;font-size:.62em;letter-spacing:.32em;font-weight:700;margin-top:.6vmin}
+.script{font-family:'Great Vibes',cursive;font-size:5vmin;margin-top:1.6vmin}
+.sub{font-size:1.9vmin;letter-spacing:.42em;text-transform:uppercase;color:#d9c48a;margin-top:1.4vmin;text-align:center}
+.orn{display:flex;align-items:center;gap:1.6vmin;margin-top:2.4vmin;opacity:.95}
+.orn .bar{width:9vmin;height:1px;background:linear-gradient(90deg,transparent,#e9c25e)}
+.orn span{color:#e9c25e;font-size:2.2vmin}
+.orn .diam{width:1.1vmin;height:1.1vmin;transform:rotate(45deg);background:#e9c25e}
+
+/* features */
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4vmin 1.8vmin;margin-top:3vmin;max-width:84vmin}
+.chip{display:flex;align-items:center;gap:.9vmin;border:1px solid rgba(233,194,94,.65);border-radius:100px;padding:1.05vmin 2.2vmin;font-size:1.75vmin;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#f3e7c9;background:linear-gradient(180deg,rgba(233,194,94,.14),rgba(233,194,94,.03))}
+.chip b{color:#e9c25e;font-weight:600}
+
+/* cta */
+.cta-row{display:flex;justify-content:center;gap:2.4vmin;margin-top:3vmin}
+.cta{font-family:'Playfair Display',serif;font-weight:800;font-size:2.5vmin;letter-spacing:.22em;text-indent:.22em;color:#14070a;padding:1.7vmin 4.6vmin;border-radius:100px;background:linear-gradient(180deg,#fdf0b8,#e9c25e 55%,#c2922a);box-shadow:0 1.4vmin 3vmin rgba(233,194,94,.35), inset 0 .3vmin 0 rgba(255,255,255,.65);text-transform:uppercase}
+.cta.ghost{background:transparent;color:#e9c25e;border:1.5px solid #e9c25e;box-shadow:none}
+.cta.small{font-size:2vmin;padding:1.4vmin 3.4vmin}
+
+/* footer */
+.footer{position:relative;z-index:5;padding:3vmin 6vmin 3.4vmin;border-top:1px solid rgba(233,194,94,.35);background:linear-gradient(180deg,rgba(233,194,94,.06),rgba(0,0,0,.25))}
+.foot-inner{display:flex;align-items:center;justify-content:center;gap:4vmin;max-width:110vmin;margin:0 auto}
+.fcol{flex:1;display:flex;flex-direction:column;align-items:center;gap:.9vmin;text-align:center}
+.fcol .lab{font-size:1.5vmin;letter-spacing:.4em;text-transform:uppercase;color:#d9c48a}
+.fcol .big{font-family:'Playfair Display',serif;font-weight:700;font-size:2.9vmin;color:#fdf0b8;letter-spacing:.06em}
+.fcol .big b{color:#e9c25e;font-weight:700}
+.fcol .addr{font-size:1.7vmin;color:#e8d9ae;line-height:1.55}
+
+/* wide mode */
+@media (min-aspect-ratio:4/3){
+ .page{flex-direction:row}
+ .side-col{flex:1.25;display:flex;flex-direction:column;justify-content:center;padding:4vmin 5vmin 3vmin 7vmin;min-width:0}
+ .hero{flex:none;flex:1.1;align-items:center}
+ .stage{width:52vmin;height:52vmin}
+ .stage img.gift{width:44vmin}
+ .chips{max-width:none;margin-top:2.4vmin}
+ .cta-row{margin-top:2.4vmin}
+ h1{margin-top:2vmin;font-size:6vmin}
+ .footer{border-top:1px solid rgba(233,194,94,.35);border-left:none}
+ .foot-inner{max-width:none}
+}
+/* tall mode */
+@media (max-aspect-ratio:5/8){
+ .header{padding-top:5vmin}
+ .brand{font-size:5vmin}
+ .stage{width:52vmin;height:52vmin}
+ .stage img.gift{width:46vmin}
+ .stage img.side{width:17vmin;right:-4vmin}
+ h1{font-size:7.4vmin;margin-top:3.4vmin}
+ .script{font-size:5.8vmin}
+ .chips{margin-top:3.6vmin;max-width:92vmin}
+ .cta-row{margin-top:3.6vmin}
+ .footer{padding:4vmin 6vmin 4.6vmin}
+ .fcol .big{font-size:3.4vmin}
+ .fcol .addr{font-size:2vmin}
+ .fcol .lab{font-size:1.7vmin}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="corner c-tl"><svg viewBox="0 0 100 100"><path d="M4 96 V22 Q4 4 22 4 H96" fill="none" stroke="#e9c25e" stroke-width="3"/><path d="M4 62 Q4 30 32 22" fill="none" stroke="#e9c25e" stroke-width="1.5" opacity=".7"/><circle cx="22" cy="4" r="3" fill="#e9c25e"/><circle cx="4" cy="22" r="3" fill="#e9c25e"/></svg></div>
+  <div class="corner c-tr"><svg viewBox="0 0 100 100"><path d="M4 96 V22 Q4 4 22 4 H96" fill="none" stroke="#e9c25e" stroke-width="3"/><path d="M4 62 Q4 30 32 22" fill="none" stroke="#e9c25e" stroke-width="1.5" opacity=".7"/><circle cx="22" cy="4" r="3" fill="#e9c25e"/><circle cx="4" cy="22" r="3" fill="#e9c25e"/></svg></div>
+  <div class="corner c-bl"><svg viewBox="0 0 100 100"><path d="M4 96 V22 Q4 4 22 4 H96" fill="none" stroke="#e9c25e" stroke-width="3"/><path d="M4 62 Q4 30 32 22" fill="none" stroke="#e9c25e" stroke-width="1.5" opacity=".7"/><circle cx="22" cy="4" r="3" fill="#e9c25e"/><circle cx="4" cy="22" r="3" fill="#e9c25e"/></svg></div>
+  <div class="corner c-br"><svg viewBox="0 0 100 100"><path d="M4 96 V22 Q4 4 22 4 H96" fill="none" stroke="#e9c25e" stroke-width="3"/><path d="M4 62 Q4 30 32 22" fill="none" stroke="#e9c25e" stroke-width="1.5" opacity=".7"/><circle cx="22" cy="4" r="3" fill="#e9c25e"/><circle cx="4" cy="22" r="3" fill="#e9c25e"/></svg></div>
+
+  <div class="side-col">
+    <div class="header">
+      <div class="brand goldtext">GEN-Z RAKHIS<small>Premium Rakhi Collection</small></div>
+    </div>
+    <div class="hero">
+      <div class="glow"></div>
+      <div class="stage">
+        <img class="gift" src="../assets/giftbox.svg" alt="Premium rakhi gift box">
+        <img class="side" src="../assets/rakhi-classic.svg" alt="Classic gold rakhi">
+        <img class="side2" src="../assets/rakhi-designer.svg" alt="Designer rakhi">
+      </div>
+      <h1 class="goldtext">Happy Raksha Bandhan<span class="em">Celebrate The Bond</span></h1>
+      <div class="script goldtext">Wear the Vibe.</div>
+      <div class="sub">Trendy Rakhis for the New Generation</div>
+      <div class="orn"><span class="bar"></span><span>&#10022;</span><span class="diam"></span><span>&#10022;</span><span class="bar"></span></div>
+      <div class="chips">
+        <div class="chip">✨ <b>Trendy</b> Designs</div>
+        <div class="chip">🎁 <b>Beautiful</b> Gift Packaging</div>
+        <div class="chip">💎 <b>Premium</b> Quality</div>
+        <div class="chip">❤️ <b>Made</b> with Love</div>
+        <div class="chip">💰 <b>Affordable</b> Prices</div>
+        <div class="chip">🚚 <b>Fast</b> Delivery</div>
+        <div class="chip">🧿 <b>Personalized</b> Designs Available</div>
+      </div>
+      <div class="cta-row">
+        <div class="cta">Order Now</div>
+        <div class="cta ghost">Shop Now</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="foot-inner">
+      <div class="fcol">
+        <div class="lab">📞 Contact Us</div>
+        <div class="big"><b>9553050079</b></div>
+        <div class="big"><b>7981889976</b></div>
+      </div>
+      <div class="vline"></div>
+      <div class="fcol">
+        <div class="lab">📍 Address</div>
+        <div class="addr">1-6-213/A/4, Parsigutta,<br>Sunnambatti, Secunderabad, Hyderabad</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

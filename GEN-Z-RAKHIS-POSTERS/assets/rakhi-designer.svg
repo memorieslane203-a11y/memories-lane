@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="dRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c86bff"/>
+      <stop offset=".5" stop-color="#8b3df0"/>
+      <stop offset="1" stop-color="#3f1d9e"/>
+    </linearGradient>
+    <linearGradient id="dGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe79a"/>
+      <stop offset=".5" stop-color="#f5c04b"/>
+      <stop offset="1" stop-color="#c98f1f"/>
+    </linearGradient>
+    <linearGradient id="dAqua" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ff3ff"/>
+      <stop offset="1" stop-color="#12b8d8"/>
+    </linearGradient>
+    <linearGradient id="dPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9ac8"/>
+      <stop offset="1" stop-color="#e73c8f"/>
+    </linearGradient>
+    <filter id="dGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="146" fill="none" stroke="url(#dRing)" stroke-width="20" filter="url(#dGlow)"/>
+  <circle cx="200" cy="200" r="146" fill="none" stroke="#a86bff" stroke-width="4" opacity=".8" stroke-dasharray="14 10" stroke-linecap="round"/>
+  <circle cx="200" cy="200" r="133" fill="none" stroke="url(#dGold)" stroke-width="4"/>
+
+  <g>
+    <circle cx="200" cy="352" r="10" fill="url(#dPink)" stroke="#c98f1f" stroke-width="2"/>
+    <circle cx="236" cy="340" r="7.5" fill="url(#dAqua)"/>
+    <circle cx="164" cy="340" r="7.5" fill="url(#dAqua)"/>
+    <circle cx="272" cy="312" r="9" fill="url(#dGold)" stroke="#8a6419" stroke-width="1.5"/>
+    <circle cx="128" cy="312" r="9" fill="url(#dGold)" stroke="#8a6419" stroke-width="1.5"/>
+    <circle cx="302" cy="268" r="7" fill="url(#dPink)"/>
+    <circle cx="98" cy="268" r="7" fill="url(#dPink)"/>
+  </g>
+
+  <g transform="translate(200,58)">
+    <polygon points="0,-62 24,-36 56,-40 52,-8 84,12 58,32 62,64 30,56 10,84 -14,58 -48,62 -44,30 -76,10 -50,-12 -56,-44 -24,-40" fill="url(#dGold)" stroke="#b9802a" stroke-width="3"/>
+    <polygon points="0,-46 20,-25 44,-30 40,-6 64,8 44,24 46,48 22,42 6,62 -12,42 -36,46 -32,22 -58,6 -38,-10 -42,-32 -18,-26" fill="url(#dPink)"/>
+    <circle r="20" fill="url(#dAqua)"/>
+    <path d="M-6 -8 L0 -22 L6 -8 L20 -2 L6 4 L0 18 L-6 4 L-20 -2 Z" fill="#fff" opacity=".95"/>
+  </g>
+
+  <g fill="url(#dGold)">
+    <path d="M70 120 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+    <path d="M332 160 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"/>
+    <path d="M320 96 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 z" opacity=".9"/>
+  </g>
+  <circle cx="58" cy="190" r="5" fill="url(#dAqua)"/>
+  <circle cx="344" cy="300" r="5" fill="url(#dPink)"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440">
+  <defs>
+    <linearGradient id="gBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7e1230"/>
+      <stop offset="1" stop-color="#3d0516"/>
+    </linearGradient>
+    <linearGradient id="gLid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a11d44"/>
+      <stop offset="1" stop-color="#5c0a22"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf0b8"/>
+      <stop offset=".35" stop-color="#f2cf6c"/>
+      <stop offset=".62" stop-color="#d8a43a"/>
+      <stop offset="1" stop-color="#91691d"/>
+    </linearGradient>
+    <radialGradient id="gRed" cx=".35" cy=".28" r=".95">
+      <stop offset="0" stop-color="#ff8d7e"/>
+      <stop offset=".5" stop-color="#d63a2e"/>
+      <stop offset="1" stop-color="#6e120b"/>
+    </radialGradient>
+    <radialGradient id="gSheen" cx=".5" cy=".5" r=".75">
+      <stop offset="0" stop-color="#fff" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- shadow -->
+  <ellipse cx="250" cy="418" rx="205" ry="20" fill="#000" opacity=".45"/>
+
+  <!-- box front -->
+  <rect x="55" y="190" width="390" height="225" rx="8" fill="url(#gBox)"/>
+  <rect x="55" y="190" width="390" height="225" rx="8" fill="url(#gSheen)"/>
+  <rect x="90" y="230" width="320" height="150" rx="6" fill="none" stroke="url(#gGold)" stroke-width="2.5" opacity=".9"/>
+  <rect x="90" y="230" width="320" height="150" rx="6" fill="none" stroke="url(#gGold)" stroke-width="1" opacity=".5" transform="translate(6,6)"/>
+
+  <!-- lid -->
+  <rect x="38" y="128" width="424" height="70" rx="10" fill="url(#gLid)"/>
+  <rect x="38" y="128" width="424" height="70" rx="10" fill="url(#gSheen)"/>
+  <rect x="38" y="128" width="424" height="10" rx="5" fill="url(#gGold)" opacity=".85"/>
+
+  <!-- ribbon vertical -->
+  <rect x="232" y="128" width="36" height="287" fill="url(#gGold)"/>
+  <rect x="232" y="128" width="36" height="287" fill="#fff" opacity=".18"/>
+  <rect x="224" y="132" width="12" height="40" fill="url(#gGold)"/>
+  <rect x="264" y="132" width="12" height="40" fill="url(#gGold)"/>
+
+  <!-- bow -->
+  <path d="M250 128 C 250 96, 176 84, 148 108 C 120 132, 156 168, 250 140 Z" fill="url(#gGold)"/>
+  <path d="M250 128 C 250 96, 324 84, 352 108 C 380 132, 344 168, 250 140 Z" fill="url(#gGold)"/>
+  <path d="M250 140 C 250 120, 222 112, 204 124 C 188 136, 214 156, 250 146 Z" fill="#fff" opacity=".3"/>
+  <circle cx="250" cy="132" r="16" fill="url(#gGold)" stroke="#8a6419" stroke-width="2"/>
+  <circle cx="250" cy="132" r="7" fill="#fff" opacity=".5"/>
+  <path d="M238 96 C 240 74, 252 62, 266 60 C 258 76, 254 88, 252 100 Z" fill="#fff" opacity=".55"/>
+
+  <!-- rakhi on lid -->
+  <g transform="translate(130,150) rotate(-24) scale(0.62)">
+    <circle cx="0" cy="0" r="110" fill="none" stroke="url(#gGold)" stroke-width="22"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#fff3c0" stroke-width="3" opacity=".5" stroke-dasharray="1 12" stroke-linecap="round"/>
+    <circle cx="0" cy="-102" r="34" fill="url(#gRed)" stroke="url(#gGold)" stroke-width="8"/>
+    <circle cx="0" cy="-102" r="16" fill="url(#gGold)"/>
+    <circle cx="0" cy="104" r="9" fill="url(#gGold)"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="url(#gGold)">
+    <path d="M74 84 l3.5 8 8 3.5 -8 3.5 -3.5 8 -3.5 -8 -8 -3.5 8 -3.5 z"/>
+    <path d="M430 96 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 z"/>
+    <path d="M356 58 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" opacity=".9"/>
+    <path d="M148 62 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" opacity=".9"/>
+  </g>
+</svg>

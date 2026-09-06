@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="kPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb3d9"/>
+      <stop offset="1" stop-color="#f05aa8"/>
+    </linearGradient>
+    <linearGradient id="kSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a6e3ff"/>
+      <stop offset="1" stop-color="#3aa7e8"/>
+    </linearGradient>
+    <linearGradient id="kSun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe28a"/>
+      <stop offset="1" stop-color="#ffb020"/>
+    </linearGradient>
+    <linearGradient id="kMint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9f7d8"/>
+      <stop offset="1" stop-color="#3ecb8e"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="200" cy="200" r="148" fill="none" stroke="url(#kPink)" stroke-width="18"/>
+  <circle cx="200" cy="200" r="148" fill="none" stroke="#ffd7ea" stroke-width="5" stroke-dasharray="10 12" stroke-linecap="round"/>
+  <circle cx="200" cy="200" r="136" fill="none" stroke="url(#kSky)" stroke-width="4"/>
+
+  <g>
+    <circle cx="200" cy="354" r="10" fill="url(#kSun)" stroke="#e08a10" stroke-width="2"/>
+    <circle cx="240" cy="342" r="8" fill="url(#kMint)" stroke="#1fa06a" stroke-width="1.5"/>
+    <circle cx="160" cy="342" r="8" fill="url(#kMint)" stroke="#1fa06a" stroke-width="1.5"/>
+    <circle cx="278" cy="310" r="9" fill="url(#kPink)"/>
+    <circle cx="122" cy="310" r="9" fill="url(#kPink)"/>
+    <circle cx="306" cy="262" r="7" fill="url(#kSun)"/>
+    <circle cx="94" cy="262" r="7" fill="url(#kSun)"/>
+  </g>
+
+  <g transform="translate(200,60)">
+    <path d="M0 -58 C 34 -58, 56 -34, 56 0 C 56 34, 34 58, 0 58 C -34 58, -56 34, -56 0 C -56 -34, -34 -58, 0 -58 Z" fill="url(#kSky)" stroke="#1e86c4" stroke-width="3"/>
+    <path d="M0 -40 C 24 -40, 40 -24, 40 0 C 40 24, 24 40, 0 40 C -24 40, -40 24, -40 0 C -40 -24, -24 -40, 0 -40 Z" fill="url(#kSun)"/>
+    <path d="M-16 -10 L0 -30 L16 -10 L34 6 L14 12 L0 32 L-14 12 L-34 6 Z" fill="#fff" opacity=".95"/>
+    <circle r="7" fill="url(#kPink)"/>
+  </g>
+
+  <g>
+    <path d="M66 130 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="url(#kSun)"/>
+    <path d="M338 150 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="url(#kMint)"/>
+    <circle cx="52" cy="210" r="6" fill="url(#kPink)"/>
+    <circle cx="350" cy="280" r="6" fill="url(#kSky)"/>
+    <path d="M316 92 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 z" fill="url(#kPink)"/>
+  </g>
+</svg>

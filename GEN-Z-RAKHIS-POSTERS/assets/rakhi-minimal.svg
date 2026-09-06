@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="mGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7e7ad"/>
+      <stop offset=".5" stop-color="#dfae45"/>
+      <stop offset="1" stop-color="#a87c22"/>
+    </linearGradient>
+    <radialGradient id="mRed" cx=".35" cy=".3" r=".95">
+      <stop offset="0" stop-color="#ff9a8b"/>
+      <stop offset=".55" stop-color="#d94a3d"/>
+      <stop offset="1" stop-color="#8e1f14"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="200" cy="200" r="150" fill="none" stroke="url(#mGold)" stroke-width="3"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#dfae45" stroke-width="14" opacity=".28"/>
+  <circle cx="200" cy="200" r="118" fill="none" stroke="url(#mGold)" stroke-width="1.5" opacity=".7"/>
+
+  <g stroke="url(#mGold)" stroke-width="1.2" opacity=".8">
+    <path d="M200 50 L200 62 M200 338 L200 350 M50 200 L62 200 M338 200 L350 200"/>
+  </g>
+
+  <circle cx="200" cy="80" r="26" fill="url(#mRed)" stroke="url(#mGold)" stroke-width="4"/>
+  <circle cx="200" cy="80" r="12" fill="url(#mGold)"/>
+
+  <g fill="url(#mGold)">
+    <circle cx="200" cy="342" r="5"/>
+    <circle cx="232" cy="330" r="3.5"/>
+    <circle cx="168" cy="330" r="3.5"/>
+    <circle cx="263" cy="301" r="4.5"/>
+    <circle cx="137" cy="301" r="4.5"/>
+  </g>
+
+  <g stroke="url(#mGold)" stroke-width="2" stroke-linecap="round">
+    <path d="M200 348 C 199 362, 200 368, 200 376"/>
+    <path d="M192 345 C 189 358, 190 366, 189 373"/>
+    <path d="M208 345 C 211 358, 210 366, 211 373"/>
+  </g>
+  <g fill="url(#mRed)">
+    <circle cx="200" cy="380" r="4"/>
+    <circle cx="189" cy="377" r="3"/>
+    <circle cx="211" cy="377" r="3"/>
+  </g>
+</svg>

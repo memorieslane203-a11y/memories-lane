@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GEN-Z RAKHIS - Instagram / Social</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#fff}
+.page{width:100vw;height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;font-family:Poppins,sans-serif;color:#1c1030;background:linear-gradient(160deg,#fff 0%,#fff3f8 40%,#f0e9ff 78%,#fff3e0 100%)}
+.story-top{position:relative;z-index:6;display:flex;align-items:center;gap:2.6vmin;padding:3vmin 5vmin 0}
+.progress{flex:1;display:flex;gap:1vmin}
+.progress span{flex:1;height:1.1vmin;border-radius:100px;background:#e8d9f8}
+.progress span.on{background:linear-gradient(90deg,#ff4d9d,#8b5cf6)}
+.brand{font-weight:900;font-size:3.6vmin;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.brand .g{color:#ff4d9d}.brand .z{color:#8b5cf6}
+.story-top .follow{font-size:1.5vmin;font-weight:700;letter-spacing:.16em;background:#1c1030;color:#fff;padding:1.1vmin 2.4vmin;border-radius:100px;text-transform:uppercase;white-space:nowrap}
+
+/* hero */
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:4;min-height:0;text-align:center;padding:0 4vmin}
+.hero-top{display:flex;align-items:center;gap:3vmin;width:100%;max-width:96vmin;justify-content:center}
+.hero h1{font-weight:900;font-size:6.4vmin;line-height:1.02;text-transform:uppercase;background:linear-gradient(90deg,#e73c8f,#8b5cf6 55%,#3b82f6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .tag{font-weight:700;font-size:2.2vmin;margin-top:1.2vmin}
+.hero .tag .h{color:#e73c8f}.hero .tag .s{color:#7a5ce0}
+.hero .sub{font-weight:700;font-size:1.7vmin;letter-spacing:.32em;text-transform:uppercase;color:#8b87a0;margin-top:1vmin}
+.arrow{font-size:4.4vmin;color:#ff4d9d;animation:none;transform:rotate(-20deg)}
+
+/* product strip */
+.strip{margin-top:2.6vmin;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5vmin;max-width:96vmin}
+.card{width:15vmin;background:#fff;border-radius:2.6vmin;padding:1.4vmin 1vmin 1.2vmin;box-shadow:0 1.2vmin 2.6vmin rgba(90,50,150,.16);border:2px solid #f3e6ff;display:flex;flex-direction:column;align-items:center;gap:.8vmin}
+.card img{width:10.5vmin;height:10.5vmin;object-fit:contain}
+.card .nm{font-size:1.25vmin;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5b4a7a}
+.card .chip-mini{font-size:1.1vmin;font-weight:700;color:#fff;background:linear-gradient(90deg,#ff4d9d,#8b5cf6);border-radius:100px;padding:.5vmin 1.4vmin;letter-spacing:.06em}
+.card:first-child{border-color:#ffc9de}
+.card:nth-child(2){border-color:#d9c6ff}
+.card:nth-child(3){border-color:#bfe3ff}
+.card:nth-child(4){border-color:#c9f2d9}
+
+/* cta */
+.cta-zone{margin-top:2.6vmin;display:flex;flex-direction:column;align-items:center;gap:1.6vmin}
+.cta-row{display:flex;justify-content:center;gap:2.2vmin}
+.cta{font-weight:900;font-size:3vmin;letter-spacing:.12em;color:#fff;padding:2vmin 5.6vmin;border-radius:100px;background:linear-gradient(90deg,#ff4d9d,#e73c8f);box-shadow:0 1.6vmin 3.4vmin rgba(255,77,157,.5);text-transform:uppercase;position:relative}
+.cta::after{content:'\2192';margin-left:1.8vmin}
+.cta.alt{background:linear-gradient(90deg,#1c1030,#3b2a63);box-shadow:0 1.6vmin 3.4vmin rgba(28,16,48,.4)}
+.cta.small{font-size:2.1vmin;padding:1.5vmin 3.4vmin}
+.special{font-weight:800;font-size:2.1vmin;letter-spacing:.2em;text-transform:uppercase;color:#8b5cf6}
+.phone-row{display:flex;gap:1.8vmin;flex-wrap:wrap;justify-content:center}
+.phone{font-weight:800;font-size:2.2vmin;color:#1c1030;background:#fff;border:2px solid #e8d9f8;padding:1.3vmin 2.8vmin;border-radius:100px;box-shadow:0 .8vmin 1.8vmin rgba(90,50,150,.12);letter-spacing:.04em}
+.phone b{color:#e73c8f}
+
+/* footer */
+.footer{position:relative;z-index:5;padding:2.6vmin 5vmin 3vmin;background:#1c1030}
+.foot-inner{display:flex;align-items:center;justify-content:space-between;gap:3vmin;max-width:110vmin;margin:0 auto}
+.foot-left .fb{font-weight:900;font-size:2.6vmin;letter-spacing:.1em;text-transform:uppercase;color:#fff}
+.foot-left .fb .g{color:#ff4d9d}.foot-left .fb .z{color:#9d7bff}
+.foot-left .ft{font-size:1.35vmin;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#a99cc9;margin-top:.7vmin}
+.fcol{display:flex;flex-direction:column;align-items:center;gap:.6vmin;text-align:center}
+.fcol .lab{font-size:1.3vmin;letter-spacing:.3em;text-transform:uppercase;color:#ffd166;font-weight:700}
+.fcol .big{font-weight:800;font-size:2.5vmin;color:#fff;letter-spacing:.05em}
+.fcol .big b{color:#7ff3ff;font-weight:800}
+.fcol .addr{font-size:1.55vmin;color:#d9d0f0;line-height:1.5;font-weight:500}
+.vline{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,#5a4a8a 50%,transparent)}
+
+/* wide mode */
+@media (min-aspect-ratio:4/3){
+ .page{flex-direction:row}
+ .side-col{flex:1.35;display:flex;flex-direction:column;justify-content:center;padding:3vmin 4vmin 3vmin 6vmin;min-width:0}
+ .hero{flex:none;flex:1}
+ .strip{max-width:none}
+ .card{width:12.5vmin}
+ .hero h1{font-size:5.6vmin}
+ .footer{border-left:1px solid #3b2a63}
+ .foot-inner{flex-direction:column;gap:2vmin;align-items:flex-start}
+ .foot-right{display:flex;gap:3vmin;width:100%;justify-content:space-between}
+}
+/* tall mode */
+@media (max-aspect-ratio:5/8){
+ .story-top{padding:4vmin 5vmin 0}
+ .brand{font-size:4.2vmin}
+ .hero h1{font-size:7.2vmin}
+ .hero .tag{font-size:2.6vmin}
+ .card{width:17vmin}
+ .card img{width:12vmin;height:12vmin}
+ .strip{max-width:86vmin}
+ .cta{font-size:3.4vmin;padding:2.4vmin 6.4vmin}
+ .special{font-size:2.4vmin}
+ .phone{font-size:2.5vmin}
+ .footer{padding:3.4vmin 5vmin 4vmin}
+ .fcol .big{font-size:2.9vmin}
+ .fcol .addr{font-size:1.8vmin}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="side-col">
+    <div class="story-top">
+      <div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div>
+      <div class="brand"><span class="g">GEN</span>-<span class="z">Z</span> RAKHIS</div>
+      <div class="follow">Follow &#10084;</div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-top">
+        <div class="arrow">&#8592;</div>
+        <div>
+          <h1>Happy Raksha Bandhan</h1>
+          <div class="tag"><span class="h">Celebrate the Bond.</span> <span class="s">Wear the Vibe.</span></div>
+        </div>
+        <div class="arrow" style="transform:scaleX(-1) rotate(-20deg)">&#8592;</div>
+      </div>
+      <div class="sub">Trendy Rakhis for the New Generation</div>
+
+      <div class="strip">
+        <div class="card"><img src="../assets/rakhi-classic.svg" alt=""><span class="nm">Traditional</span><span class="chip-mini">Best Seller</span></div>
+        <div class="card"><img src="../assets/rakhi-designer.svg" alt=""><span class="nm">Designer</span><span class="chip-mini">Trending</span></div>
+        <div class="card"><img src="../assets/rakhi-brother.svg" alt=""><span class="nm">Brother</span><span class="chip-mini">New</span></div>
+        <div class="card"><img src="../assets/rakhi-sister.svg" alt=""><span class="nm">Sister</span><span class="chip-mini">New</span></div>
+        <div class="card"><img src="../assets/rakhi-kids.svg" alt=""><span class="nm">Kids</span><span class="chip-mini">Cute</span></div>
+        <div class="card"><img src="../assets/rakhi-minimal.svg" alt=""><span class="nm">Minimal</span><span class="chip-mini">Style</span></div>
+        <div class="card"><img src="../assets/giftbox.svg" alt=""><span class="nm">Gift Box</span><span class="chip-mini">Premium</span></div>
+      </div>
+
+      <div class="cta-zone">
+        <div class="cta-row">
+          <div class="cta">Order Now</div>
+          <div class="cta alt">Shop Now</div>
+        </div>
+        <div class="special">Make This Raksha Bandhan Special</div>
+        <div class="phone-row">
+          <div class="phone">📞 <b>9553050079</b></div>
+          <div class="phone">📞 <b>7981889976</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="foot-inner">
+        <div class="foot-left">
+          <div class="fb"><span class="g">GEN</span>-<span class="z">Z</span> RAKHIS</div>
+          <div class="ft">✨ Trendy Designs • 🎁 Gift Packaging • 💎 Premium Quality</div>
+          <div class="ft">❤️ Made with Love • 💰 Affordable • 🚚 Fast Delivery • 🧿 Personalized</div>
+        </div>
+        <div class="foot-right">
+          <div class="fcol">
+            <div class="lab">📞 Contact Us</div>
+            <div class="big"><b>9553050079</b> &nbsp;•&nbsp; <b>7981889976</b></div>
+          </div>
+          <div class="vline"></div>
+          <div class="fcol">
+            <div class="lab">📍 Address</div>
+            <div class="addr">1-6-213/A/4, Parsigutta, Sunnambatti,<br>Secunderabad, Hyderabad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
