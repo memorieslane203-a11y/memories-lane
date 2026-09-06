@@ -88,7 +88,7 @@ export const useCart = create(
       getTotals: () => {
         const { items, coupon, giftWrap } = get()
         const subtotal = items.reduce((s, i) => s + i.price * i.qty, 0)
-        const shipping = subtotal === 0 || subtotal * 83.5 >= 200 ? 0 : 6.5
+        const shipping = 0 // delivery is always free
         const wrapFee = giftWrap ? 4.5 : 0
         let discount = 0
         if (coupon) {

@@ -56,11 +56,7 @@ export default function Hero() {
             <Link to={preset.ctaPrimary.to} className="btn-gold !px-6 !py-2.5 !text-sm btn-glow">{preset.ctaPrimary.label}</Link>
             <Link to={preset.ctaSecondary.to} className="btn !border-2 !border-cream-100/70 !px-6 !py-2.5 !text-sm text-cream-100 hover:!border-gold-400 hover:text-gold-300">{preset.ctaSecondary.label}</Link>
           </div>
-          <div className="mt-10 flex items-center justify-center lg:justify-start gap-4">
-            <div className="rounded-full bg-white px-5 py-2.5 shadow-soft">
-              <p className="font-serif text-lg text-maroon-800">₹200+ <span className="text-sm font-bold uppercase tracking-widest text-ink/50">Free shipping</span></p>
-            </div>
-          </div>
+
         </motion.div>
 
         <motion.div
